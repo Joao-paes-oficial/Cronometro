@@ -1,0 +1,21 @@
+body, html {
+    background-image: linear-gradient(270deg, #ffba24 0, #ffac32 8.33%, #ff9c3d 16.67%, #ff8b46 25%, #ff794d 33.33%, #ff6651 41.67%, #f25353 50%, #db4153 58.33%, #c73354 66.67%, #b42754 75%, #a31f55 83.33%, #951957 91.67%, #88185a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #88185a;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    
+  
+}
+
+.container p {
+    text-align: center;
+}
