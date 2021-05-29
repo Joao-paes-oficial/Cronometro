@@ -34,6 +34,10 @@ function restart(){
     seconds = 0;
 
     document.getElementById("display").innerText = "00:00:00";
+    document.getElementById("start").innerText = "Start";
+    document.getElementById("start").onclick = () => {
+        return start();
+    }
 }
 
 function format(){
