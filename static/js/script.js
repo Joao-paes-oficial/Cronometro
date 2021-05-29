@@ -1,0 +1,44 @@
+"use strict"
+
+var hours = 0;
+var minutes = 0;
+var seconds = 0;
+
+var time = 1000;
+
+var chronometer;
+
+function start(){
+    chronometer = setInterval(() => {
+        format();
+    }, time);
+}
+
+function restart(){
+    clearInterval(chronometer);
+
+    hours = 0;
+    minutes = 0;
+    seconds = 0;
+
+    document.getElementById("display").innerText = "00:00:00";
+}
+
+function format(){
+    seconds ++;
+
+    if(seconds == 59){
+        seconds = 0;
+        minutes ++;
+
+        if(minutes == 59){
+            minutes = 0;
+            hours ++;
+        }
+    }
+
+    var format_display = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+    document.getElementById("display").innerText = format_display;
+
+    return format_display;
+}
