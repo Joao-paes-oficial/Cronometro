@@ -7,6 +7,7 @@ var time = 1000;
 var chronometer;
 
 function start(){
+    // To execute the instruction many times
     chronometer = setInterval(() => {
         format();
     }, time);
@@ -25,6 +26,7 @@ function start(){
 }
 
 function restart(){
+    // To clear chronometer
     clearInterval(chronometer);
 
     hours = 0;
@@ -46,7 +48,6 @@ function format(){
             hours ++;
         }
     }
-
     var format_display = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
     document.getElementById("display").innerText = format_display;
 
