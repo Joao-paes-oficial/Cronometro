@@ -1,5 +1,3 @@
-"use strict"
-
 var hours = 0;
 var minutes = 0;
 var seconds = 0;
@@ -12,6 +10,18 @@ function start(){
     chronometer = setInterval(() => {
         format();
     }, time);
+    if(true){
+        document.getElementById("start").innerText = "Pause";
+
+        document.getElementById("start").onclick = () => {
+            clearInterval(chronometer);
+            document.getElementById("start").innerText = "Start";
+            
+            document.getElementById("start").onclick = () => {
+                return start();
+            }
+        }
+    }
 }
 
 function restart(){
