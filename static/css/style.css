@@ -18,14 +18,6 @@ body, html {
   
 }
 
-.btn #start {
-    margin-left: 0;
-}
-
-.btn #restart {
-    margin-right: 0;
-}
-
 #display {
     margin-left: 60px;
     margin-top: 200px;
