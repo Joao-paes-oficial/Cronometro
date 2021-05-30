@@ -10,20 +10,31 @@ body, html {
 }
 
 .container {
-    width: 500px;
-    height: 500px;
+    
     margin: auto;
     background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    padding: 30px;
     
-  
 }
 
 #display {
-    margin-left: 60px;
-    margin-top: 200px;
+    position:relative;
+    margin-left: 10px;
+    margin-top: 100px;
     font-family: 'Roboto', sans-serif;
     font-size: 6em;
 }
+
+
 
 .punctuation {
     text-align: center;
