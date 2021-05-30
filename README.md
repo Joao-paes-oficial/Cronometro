@@ -1,6 +1,6 @@
 # Cronometro
 
-**Projeto simples com o objetivo de cronometrar o tempo**
+**Projeto simples com o objetivo de cronometrar o tempo.**
 
 ## Vídeo do projeto
 
