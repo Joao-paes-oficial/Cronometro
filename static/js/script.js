@@ -35,7 +35,7 @@ function restart(){
 
     document.getElementById("display").innerText = "00:00:00";
 
-    document.querySelector(".punctuation").innerHTML = ""
+    document.querySelector(".punctuation").innerHTML = "";
 
     document.getElementById("start").innerHTML = `<img src="../icons/play-fill.svg">`
     document.getElementById("start").onclick = () => {
