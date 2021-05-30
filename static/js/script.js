@@ -62,12 +62,13 @@ function format(){
         return bestTime(format_display);
     }
 
-    
     return format_display;
-    
 }
 
 function bestTime(item){
-    
-    document.querySelector(".punctuation").innerHTML += `<p>${item}</p>`
+    if(item === undefined){
+        document.querySelector(".punctuation").innerHTML += `<p>00:00:00</p>`
+    }else{
+        document.querySelector(".punctuation").innerHTML += `<p>${item}</p>`
+    }
 }
