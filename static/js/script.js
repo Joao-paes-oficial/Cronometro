@@ -12,11 +12,11 @@ function start(){
         format();
     }, time);
     if(true){
-        document.getElementById("start").innerText = "Pause";
+        document.querySelector("#start").innerHTML = '<img src="../icons/pause-fill.svg">';
 
         document.getElementById("start").onclick = () => {
             clearInterval(chronometer);
-            document.getElementById("start").innerText = "Start";
+            document.getElementById("start").innerHTML = '<img src="../icons/play-fill.svg">';
             
             document.getElementById("start").onclick = () => {
                 return start();
@@ -34,7 +34,10 @@ function restart(){
     seconds = 0;
 
     document.getElementById("display").innerText = "00:00:00";
-    document.getElementById("start").innerText = "Start";
+
+    document.querySelector(".punctuation").innerHTML = ""
+
+    document.getElementById("start").innerHTML = `<img src="../icons/play-fill.svg">`
     document.getElementById("start").onclick = () => {
         return start();
     }
@@ -55,5 +58,16 @@ function format(){
     var format_display = (hours < 10 ? "0" + hours : hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
     document.getElementById("display").innerText = format_display;
 
+    document.querySelector("#bestTime").onclick = () => {
+        return bestTime(format_display);
+    }
+
+    
     return format_display;
+    
+}
+
+function bestTime(item){
+    
+    document.querySelector(".punctuation").innerHTML += `<p>${item}</p>`
 }

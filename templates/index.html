@@ -13,16 +13,27 @@
    
     <div class="container">
         <div class="btns">
-            <img src="../icons/play-fill.svg" onclick="start()">
-            <img src="../icons/arrow-repeat.svg" onclick="restart()">
-            <img src="../icons/award-fill.svg">
+            <p onclick="start()" id="start">
+                <img src="../icons/play-fill.svg">
+            </p>
+
+            <p onclick="restart()" id="restart"> 
+                <img src="../icons/arrow-repeat.svg">
+            </p>
+            
+            <p onclick="bestTime()" id="bestTime">
+                <img src="../icons/award-fill.svg">
+            </p>
         </div>
 
         <div id="display">
             <span>00:00:00</span>
         </div>
+        <div class="punctuation">
+            <p></p>
+        </div>
     </div>
-    
+
     <script src="../static/js/script.js"></script>
 </body>
 
