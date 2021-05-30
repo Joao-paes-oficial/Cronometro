@@ -6,8 +6,6 @@ body, html {
     align-items: center;
     background-image: radial-gradient(circle at 90.56% -7.92%, #fffff6 0, #fdfff3 7.14%, #f4ffef 14.29%, #eaffeb 21.43%, #dfffe7 28.57%, #d3fce4 35.71%, #c5f7e1 42.86%, #b5f2de 50%, #a5eddd 57.14%, #95e8dd 64.29%, #85e3de 71.43%, #76dfe0 78.57%, #69dbe4 85.71%, #5cd7e7 92.86%, #52d3ec 100%);
     background-attachment: fixed;
-    
-    /* background:         linear-gradient(90deg, #fff 10%, #205E99 90%); */
 }
 
 .container {
