@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body, html {
-    display: flex;
+    display:inherit;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
+    background-image: radial-gradient(circle at 90.56% -7.92%, #fffff6 0, #fdfff3 7.14%, #f4ffef 14.29%, #eaffeb 21.43%, #dfffe7 28.57%, #d3fce4 35.71%, #c5f7e1 42.86%, #b5f2de 50%, #a5eddd 57.14%, #95e8dd 64.29%, #85e3de 71.43%, #76dfe0 78.57%, #69dbe4 85.71%, #5cd7e7 92.86%, #52d3ec 100%);
+    background-attachment: fixed;
+    
+    /* background:         linear-gradient(90deg, #fff 10%, #205E99 90%); */
 }
 
 .container {
-    
+    width: 800px;
+    height: 500px;
     margin: auto;
-    background-color: azure;
+    padding-top: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +25,6 @@ img {
     width: 80px;
     height: 80px;
     padding: 30px;
-    
 }
 
 #display {
@@ -34,8 +35,8 @@ img {
     font-size: 6em;
 }
 
-
-
 .punctuation {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
 }
